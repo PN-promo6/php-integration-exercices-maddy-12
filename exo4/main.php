@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Style CSS -->
     <style>
         body {
             margin: 0;
@@ -28,7 +29,7 @@
 </head>
 
 <body>
-
+    <!-- intégre le carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php
@@ -49,6 +50,7 @@
             ?>
 
         </div>
+        <!-- flèches avant arrière -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
