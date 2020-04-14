@@ -24,13 +24,23 @@
                                 <span class="input-group-text"> <i class="fas fa-search"></i> </span>
                             </div>
                         </div>
+
                         <ul class="list-group mb-3">
-                            <li class="list-group-item">
-                                <i class="far fa-square done-icon"></i>
-                                <i class="far fa-check-square done-icon"></i>
-                                <span class="todo-text">It's a dummy todo item</span>
-                                <i class="far fa-trash-alt"></i>
-                            </li>
+                            <?php
+                            $todo = array("la lessive", "nourrir les chats", "regarder netflix", "pas de rapport de stage");
+                            foreach ($todo as $oneTodo) {
+                            ?>
+                                <li class="list-group-item">
+                                    <i class="far fa-square done-icon"></i>
+                                    <i class="far fa-check-square done-icon"></i>
+                                    <span class="todo-text"><?= $oneTodo //une autre manière de faire, au lieu de mettre un echo $laVariable à la ligne 32 
+                                                            ?></span>
+                                    <i class="far fa-trash-alt"></i>
+                                </li>
+                            <?php
+                            }
+                            ?>
+
                             <li class="list-group-item done">
                                 <i class="far fa-square done-icon"></i>
                                 <i class="far fa-check-square done-icon"></i>
